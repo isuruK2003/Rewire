@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile.css') }}">
+    <link rel="stylesheet" id="theme-stylesheet" href="{{ url_for('static', filename='css/theme-dark.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icons/logo.svg') }}">
+    
+    <title>Demo - ChatBot</title>
+</head>
+<body>
+    <div class="message-interface-wrap">
+        <div class="message-interface">
+            <div class="message-interface-head">
+                <div class="avatar">
+                    <span id="avatar-button">#</span>
+                    <div id="menu" class="menu">
+                        <ul class="menu-list">
+                            <li class="menu-item" id="change-theme-button">Switch Theme</li>
+                        </ul>
+                    </div>
+                </div>
+                <input type="text" id="sender-name" placeholder="Enter your name" autocomplete="off" autofocus="on"
+                spellcheck="false">
+                <button class="icon" id="connect-button">
+                    <img class="icon" src="{{ url_for('static', filename='icons/join-group-icon.svg') }}" alt="Join">
+                </button>
+            </div>
+            <div class="message-container" id="messages">
+                <div class="landing">
+                    <img class="landing-image" src="{{ url_for('static', filename='icons/logo.svg') }}">
+                    <span class="landing-title">Rewire</span>
+                </div>
+            </div>
+            <div class="input-group">
+                <input type="text" id="content" placeholder="Enter your message" autocomplete="off" spellcheck="true">
+                <button class="icon" id="send-button">
+                    <img src="{{ url_for('static', filename='icons/send-icon.svg') }}" alt="send">
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

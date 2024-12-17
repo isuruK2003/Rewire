@@ -1,0 +1,68 @@
+:root {
+    /* Border Radius Variables */
+    --radius-standard: 8px;
+    --radius-small: 4px;
+    --radius-mid: 16px;
+    --radius-full: 50%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+input {
+    width: 100%;
+    padding: 8px 16px;
+    font-family: inherit;
+    border-radius: var(--radius-standard);
+    box-sizing: border-box;
+    background-color: inherit;
+    color: inherit;
+}
+
+/* input:focus { < See Themes > } */
+
+button {
+    border: none;
+    font-family: inherit;
+    color: inherit;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+button.std {
+    padding: 8px 16px;
+    border-radius: var(--radius-standard);
+}
+
+button.icon {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: var(--radius-full);
+}
+
+button.icon img {
+    width: 20px;
+    height: 20px;
+}
+
+/*
+button.icon:hover { < See Themes > }
+
+button.icon:active  { < See Themes > }
+*/
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/*
+::-webkit-scrollbar-track { < See Themes > }
+::-webkit-scrollbar-thumb { < See Themes > }
+::-webkit-scrollbar-thumb:hover { < See Themes > }
+*/
