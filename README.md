@@ -6,3 +6,5 @@ ReWire is an mobile application thta is designed to assist individuals in overco
 - Community platform
 - Therapists Booking
 - Emergency support system
+
+TEST COMMIT
