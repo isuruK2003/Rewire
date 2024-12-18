@@ -5,7 +5,7 @@ from chatbot import ChatBot
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'oop_is_the_best'
 
-socketio = SocketIO(app)
+socketio = SocketIO(app, cors_allowed_origins="*")
 
 # initialize chatbot
 chatbot = ChatBot()

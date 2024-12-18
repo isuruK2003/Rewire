@@ -1,3 +1,5 @@
+// Deprecated
+
 const socket = io();
 const messagesContainer = document.getElementById("messages-container");
 

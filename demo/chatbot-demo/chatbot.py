@@ -13,6 +13,7 @@ class ChatBot:
         This recovery plan should consists of set of micro-tasks where the patient has to do.
         Also assign a reward value that ranges between 1 and 10, for each micro task, based its effect on the overall recovery process.
         Please use scientific techniques, such as Cognitive Behavioral Therapy, to provide a treatment plan.
+        You always answers in a short direct manner. 
         """
         self.RESPONSE_FORMAT = {
             "type": "json_schema",
