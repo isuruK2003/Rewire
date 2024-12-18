@@ -1,0 +1,125 @@
+:root {
+    --color-background-global: #f2f2f2;
+
+    --color-background-global-a1: #ffffff;
+    --color-background-global-b1: #1b7fe3;
+    --color-background-global-b2: #2282e2;
+    --color-background-global-b3: #1567b9;
+
+    --color-background-global-c1: #ebf7ff;
+    --color-background-global-c2: #7cadc9;
+    --color-background-global-c3: #52abde80;
+
+    --color-background-global-d1: #c5858596;
+    --color-background-global-d2: #ffc7c79e;
+
+    --color-foreground-global: #000000;
+
+    --color-foreground-global-a1: #ffffff;
+    --color-foreground-global-b1: #666666;
+    --color-foreground-global-c1: #745353ec;
+    
+    --color-background-scrollbar-track: #f1f1f1;
+    --color-background-scrollbar-thumb: #c1c1c1c1;
+    --color-background-scrollbar-thumb-hover: #555;
+    
+    --color-box-shadow: #0000001a;
+}
+
+body {
+    background-color: var(--color-background-global);
+}
+
+input {
+    border: 1px solid var(--color-background-global-c3);
+}
+
+input:focus {
+    outline: 2px solid var(--color-background-global-c2);
+}
+
+button.std {
+    color: var(--color-foreground-global-a1);
+    background-color: var(--color-background-global-b1);
+}
+
+button.icon {
+    background-color: var(--color-background-global-b2);
+    color: var(--color-foreground-global-a1);
+}
+
+button.icon:hover {
+    background-color: var(--color-background-global-b1);
+}
+
+button.icon:active {
+    background-color: var(--color-background-global-b3);
+}
+
+.message-interface {
+    box-shadow: 0px 0px 5px 2px var(--color-box-shadow);
+    background-color: var(--color-background-global-a1);
+}
+
+.message-interface-head {
+    color: var(--color-foreground-global);
+    background-color: var(--color-background-global-c1);
+}
+
+.avatar > * {
+    background-color: var(--color-background-global-b1);
+    color: var(--color-foreground-global-a1);
+}
+
+.sender {
+    color: var(--color-foreground-global-b1);
+}
+
+.content {
+    background-color: var(--color-foreground-global-b1);
+    color: var(--color-foreground-global-a1);
+}
+
+.message.this-user .content {
+    background-color: var(--color-background-global-b1);
+}
+
+.error {
+    background-color: var(--color-background-global-d2);
+    color: var(--color-foreground-global-c1);
+}
+
+.button-close:hover {
+    background-color: var(--color-background-global-d1);
+}
+
+.input-group {
+    background-color: var(--color-background-global-c1);
+}
+
+.input-group input {
+    background-color: var(--color-foreground-global-a1);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: var(--color-background-scrollbar-thumb);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-background-scrollbar-thumb-hover);
+}
+
+img.landing-image {
+    filter: invert(70%);
+}
+
+.menu {
+    background-color: var(--color-background-global-a1);
+    color: var(--color-foreground-global-b1);
+    box-shadow: 0px 0px 4px 1px var(--color-box-shadow);
+}
+
+.menu-item:hover {
+    background-color: var(--color-background-global-c1);
+}
