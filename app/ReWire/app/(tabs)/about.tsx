@@ -5,11 +5,12 @@ export default function TabTwoScreen() {
   return (
     <ScrollView style={styles.container}>
       <View style={styles.content}>
-        <Text style={styles.title}>About Rewire</Text>
         
-        <Text style={styles.description}>
+        <View style={styles.featureCard}>
+          <Text style={styles.description}>
           ReWire is a mobile application designed to assist individuals in managing and overcoming behavioral addictions. By combining AI-driven assessments with personalized recovery strategies, the app offers a structured, non-medication approach to support users on their recovery journey.
-        </Text>
+          </Text>
+        </View>
 
         <Text style={styles.sectionTitle}>Features</Text>
 
@@ -94,16 +95,19 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.3,
     shadowRadius: 4,
     elevation: 5,
+    
   },
   featureTitle: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: '#1a71c8',
+    color: '#adcef0',
     marginBottom: 8,
+    textAlign: 'center'
   },
   featureDescription: {
     fontSize: 14,
     lineHeight: 20,
     color: '#888',
+    textAlign: 'center'
   },
 });

@@ -3,8 +3,10 @@ import { View, Text, StyleSheet } from 'react-native';
 
 export default function App() {
   return (
+
     <View style={styles.container}>
       <View style={styles.quoteBox}>
+        <Text style={styles.quoteTitle}>Daily Quote</Text>
         <Text style={styles.quote}>"Your decision to kill your addiction will become a reality only if you believe and reinforce the fact that you have the capacity to do it."</Text>
         <Text style={styles.quoteAuthor}>- Dr. Prem</Text>
       </View>
@@ -66,6 +68,13 @@ const styles = StyleSheet.create({
     lineHeight: 20,
     color: '#E0E0E0',
     textAlign: 'center',
+  },
+  quoteTitle: {
+    textAlign: 'center',
+    color: '#888',
+    fontSize: 20,
+    paddingBottom: 16,
+    fontWeight: 500
   },
   quoteAuthor: {
     fontSize: 12,
